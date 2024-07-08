@@ -1,0 +1,105 @@
+.navbar {
+    background: white;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.75rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-links li {
+    margin: 0 1.5rem;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #343a40;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-links .cta-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    transition: background 0.5s ease;
+}
+
+.navbar .nav-links .cta-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.navbar .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar .menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #343a40;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar .search-icon {
+    display: none; /* Show only on certain breakpoints or when user interacts */
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        text-align: center;
+        padding: 1rem 0;
+        box-shadow: 0 4px 6px var(--shadow-color);
+    } 
+
+    .navbar .nav-links.show {
+        display: flex;
+    }
+
+    .navbar .menu-toggle {
+        display: block;
+    }
+
+    .navbar .search-icon {
+        display: block; /* Enable search icon in mobile view */
+        margin-left: 15px;
+    }
+}

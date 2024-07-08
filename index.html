@@ -1,133 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>#000000</title>
-    <link type="image/x-icon" rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAHklEQVQ4T2NkYGD4z0ABYBw1gGE0DBhGw4BhWIQBAE5OEAELnjVHAAAAAElFTkSuQmCC">
-    <style>
-        :root {
-            --color: #000000;
-            --color-transparent: #00000022;
-        }
-
-        ::selection {
-            background: var(--color-transparent);
-        }
-
-        html,
-        body {
-            background: var(--color);
-            height: 100%;
-            margin: 0;
-        }
-
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-        }
-
-        #color {
-            background: white;
-            color: var(--color);
-            font-size: 2.5rem;
-            font-weight: 300;
-            padding: 2.25rem 3rem;
-            font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-            cursor: text;
-        }
-    </style>
+    <title>HappyPouch</title>
+    <link rel="stylesheet" href="./css/landing-page.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
 </head>
-
 <body>
-    <p id="color">#000000</p>
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Take Control of Your Ostomy Care</h1>
+                <p>With HappyPouch, managing your ostomy care has never been easier. Join our community today!</p>
+                <div class="hero-buttons">
+                    <button class="primary-btn">Start Free Trial</button>
+                    <button class="secondary-btn">Learn More</button>
+                </div>
+            </div>
+            <img src="https://www.ostomy.org/wp-content/uploads/2019/04/Intestines-crop-1030x465.jpg" alt="HappyPouch Hero Image" class="hero-image">
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="./images/logo_happy_pouch.png" alt="HappyPouch Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#signup" class="cta-button">Join Free</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2>Explore HappyPouch Features</h2>
+            <div class="features-cards">
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <i class="fas fa-robot icon"></i>
+                    </div>
+                    <h3>Interactive Chatbot</h3>
+                    <p>Always at your side, HappyGuide, our friendly chatbot, is ready to assist with your ostomy care questions, any time of the day.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <i class="fas fa-heartbeat icon"></i>
+                    </div>
+                    <h3>Health Tracking</h3>
+                    <p>Effortlessly monitor your daily health with our intuitive tools, designed to make ostomy management straightforward and stress-free.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <i class="fas fa-users icon"></i>
+                    </div>
+                    <h3>Community Support</h3>
+                    <p>Join discussions, share experiences, and receive support from a community that truly understands your journey.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <i class="fas fa-book icon"></i>
+                    </div>
+                    <h3>Resource Library</h3>
+                    <p>Explore an extensive library filled with articles, videos, and personal stories to educate and inspire you every step of the way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="benefits-section">
+        <div class="container">
+            <h2>Unlock Your Benefits with HappyPouch</h2>
+            <p class="benefits-intro">Discover how HappyPouch can transform your daily ostomy care management.</p>
+            <div class="benefits-cards">
+                <div class="benefit-card">
+                    <div class="icon-container">
+                        <i class="fas fa-sync-alt icon"></i>
+                    </div>
+                    <h3>Seamless Integration</h3>
+                    <p>Integrate seamlessly with existing healthcare systems to streamline your care process.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon-container">
+                        <i class="fas fa-user-friends icon"></i>
+                    </div>
+                    <h3>Peer Support</h3>
+                    <p>Connect with a supportive community that understands your needs and challenges.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon-container">
+                        <i class="fas fa-chart-line icon"></i>
+                    </div>
+                    <h3>Progress Tracking</h3>
+                    <p>Track your health improvements and receive personalized reports that help you stay informed.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon-container">
+                        <i class="fas fa-shield-alt icon"></i>
+                    </div>
+                    <h3>Enhanced Security</h3>
+                    <p>Benefit from top-notch security practices to keep your health data safe and private.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="how-it-works-cards">
+                <div class="how-it-works-card">
+                    <div class="icon-container">
+                        <img src="icon1.png" alt="Sign Up Icon">
+                    </div>
+                    <h3>Step 1: Sign Up</h3>
+                    <p>Join our community by signing up for a free account. It only takes a few minutes to get started.</p>
+                </div>
+                <div class="how-it-works-card">
+                    <div class="icon-container">
+                        <img src="icon2.png" alt="Personalize Icon">
+                    </div>
+                    <h3>Step 2: Personalize</h3>
+                    <p>Customize your profile and preferences to get the most relevant resources and support for your needs.</p>
+                </div>
+                <div class="how-it-works-card">
+                    <div class="icon-container">
+                        <img src="icon3.png" alt="Engage Icon">
+                    </div>
+                    <h3>Step 3: Engage</h3>
+                    <p>Start engaging with our community, access resources, and get support to manage your ostomy care.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2>What Users Say</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p>"HappyPouch has transformed my life. I feel more in control and supported." - <b>Alex, HappyPouch User</b></p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The community and resources are invaluable. I’ve learned so much!" - <b>Jordan, HappyPouch User</b></p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The support and advice from the community have been a game-changer for me." - <b>Sam, HappyPouch User</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="signup" class="signup-section">
+        <div class="container">
+            <h2>Join HappyPouch Today!</h2>
+            <p>Become part of a community that supports and enhances your daily ostomy care management.</p>
+            <form action="submit_form_url" method="post" class="signup-form">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit" class="signup-button">Join Free</button>
+            </form>
+            <p class="privacy-note">By signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 HappyPouch. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script>
-        function randomInt(min, max) {
-            return Math.floor(Math.random() * (max - min + 1) + min);
-        }
-
-        function hslToHex(h, s, l) {
-            h /= 360;
-            s /= 100;
-            l /= 100;
-            var r = void 0,
-                g = void 0,
-                b = void 0;
-            if (s === 0) {
-                r = g = b = l; // achromatic
-            } else {
-                var hue2rgb = function hue2rgb(p, q, t) {
-                    if (t < 0) t += 1;
-                    if (t > 1) t -= 1;
-                    if (t < 1 / 6) return p + (q - p) * 6 * t;
-                    if (t < 1 / 2) return q;
-                    if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
-                    return p;
-                };
-                var q = l < 0.5 ? l * (1 + s) : l + s - l * s;
-                var p = 2 * l - q;
-                r = hue2rgb(p, q, h + 1 / 3);
-                g = hue2rgb(p, q, h);
-                b = hue2rgb(p, q, h - 1 / 3);
-            }
-            var toHex = function toHex(x) {
-                var hex = Math.round(x * 255).toString(16);
-                return hex.length === 1 ? '0' + hex : hex;
-            };
-            return '#' + toHex(r) + toHex(g) + toHex(b);
-        }
-
-        window.onload = function () {
-            let stopProp = function (ev) {
-                ev.stopPropagation();
-            }
-
-            var colorElement = document.getElementById("color");
-            colorElement.addEventListener("click", stopProp, false);
-            colorElement.addEventListener("mousedown", stopProp, false);
-
-            var setFavicon = function (hex) {
-                var canvas = document.createElement('canvas');
-                canvas.width = 16;
-                canvas.height = 16;
-                var ctx = canvas.getContext('2d');
-                ctx.fillStyle = hex;
-                ctx.fillRect(0, 0, 16, 16);
-                document.getElementsByTagName('link')[0].href = canvas.toDataURL("image/x-icon");
-            }
-
-            var setRandomColor = function setRandomColor() {
-                var h = void 0,
-                    s = void 0,
-                    l = void 0;
-
-                h = randomInt(0, 359);
-                s = randomInt(55, 75);
-                l = randomInt(40, 60);
-
-                document.documentElement.style.setProperty('--color', 'hsl(' + h + ', ' + s + '%, ' + l + '%)');
-                var hex = hslToHex(h, s, l);
-                document.title = hex;
-                colorElement.innerHTML = hex;
-                document.documentElement.style.setProperty('--color-transparent', hex + '22');
-
-                setFavicon(hex);
-            };
-            setRandomColor();
-
-            var body = document.getElementsByTagName("body")[0];
-            body.addEventListener("mousedown", function (ev) {
-                ev.preventDefault();
-            });
-            body.addEventListener("click", function () {
-                setRandomColor();
-            }, false);
-        };
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
     </script>
 </body>
-
 </html>

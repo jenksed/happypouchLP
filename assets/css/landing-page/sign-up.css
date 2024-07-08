@@ -1,0 +1,71 @@
+#signup {
+    background: var(--signup-background);
+    text-align: center;
+    padding: 4rem 2rem; /* Increased padding for better visual spacing */
+    border-top: 5px solid var(--signup-border-color);
+}
+
+#signup .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#signup h2 {
+    margin-bottom: 1rem; /* Reduced margin for tighter design */
+    font-size: 2.8rem; /* Larger font for emphasis */
+    color: var(--primary-color);
+}
+
+#signup p {
+    color: #666;
+    margin-bottom: 2rem; /* Increased space above the form */
+    line-height: 1.6; /* Improved readability */
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Added gap between form elements */
+}
+
+#signup input[type="email"] {
+    padding: 1rem;
+    border: 2px solid #ccc; /* Slightly thicker border for emphasis */
+    border-radius: 5px;
+    width: 90%; /* Increased width for better mobile experience */
+    max-width: 500px; /* Increased maximum width for desktop */
+    transition: all 0.3s ease;
+}
+
+#signup input[type="email"]:focus {
+    border-color: var(--secondary-color); /* Use secondary color for focus */
+    box-shadow: 0 4px 8px var(--shadow-color-deep);
+    outline: none;
+}
+
+.signup-button {
+    padding: 1rem 3rem;
+    border-radius: 30px; /* More pronounced rounded edges */
+    background: var(--primary-color);
+    color: var(--highlight-color);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    background: var(--secondary-color); /* Different color on hover */
+    transform: scale(1.05); /* Slight scaling for dynamic interaction */
+}
+
+.privacy-note {
+    font-size: 0.9rem; /* Smaller font for less emphasis */
+    margin-top: 1.5rem;
+}
+
+.privacy-note a {
+    color: var(--secondary-color); /* Links that stand out */
+    text-decoration: underline;
+}

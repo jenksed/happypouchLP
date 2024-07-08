@@ -1,0 +1,148 @@
+@import'./landing-page/features.css';
+@import'./landing-page/howitworks.css';
+@import'./landing-page/testimonials.css';
+@import'./landing-page/navbar.css';
+@import'./landing-page/sign-up.css';
+@import'./landing-page/footer.css';
+@import'./landing-page/media-queries.css';
+
+:root {
+    --primary-color: #0A74DA; /* Blue */
+    --secondary-color: #094B9C; /* Darker Blue */
+    --accent-color: #17A2B8; /* Teal */
+    --text-color: #343A40; /* Dark Gray */
+    --background-color: #F8F9FA; /* Light Gray */
+    --highlight-color: #FFFFFF; /* White */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Shadow */
+    --shadow-color-deep: rgba(0, 0, 0, 0.15); /* Deeper Shadow */
+    --shadow-color-deeper: rgba(0, 0, 0, 0.2); /* Deepest Shadow */
+    --hero-text-color: #FFFFFF; /* White */
+    --hero-border-color: #094B9C; /* Darker Blue */
+    --hero-shadow-intensity: rgba(0,0,0,0.3); /* Shadow Intensity */
+    --hero-button-background: #17A2B8; /* Teal */
+    --hero-button-color: #FFFFFF; /* White */
+    --nav-gradient-start: #0A74DA; /* Blue */
+    --nav-gradient-end: #094B9C; /* Darker Blue */
+    --feature-background: #E0F7FA; /* Light Teal */
+    --feature-text-color: #094B9C; /* Darker Blue */
+    --feature-icon-color: #17A2B8; /* Teal */
+    --benefit-background: #F8F9FA; /* Light Gray */
+    --benefit-text-color: #0A74DA; /* Blue */
+    --how-it-works-background: #E8F5E9; /* Light Green */
+    --how-it-works-text-color: #094B9C; /* Darker Blue */
+    --testimonial-background: #F3E5F5; /* Light Purple */
+    --testimonial-text-color: #094B9C; /* Darker Blue */
+    --signup-background: #FFEBEE; /* Light Red */
+    --signup-border-color: #E57373; /* Light Red */
+    --signup-text-color: #D32F2F; /* Dark Red */
+    --footer-background: #343A40; /* Dark Gray */
+    --footer-text-color: #CFD8DC; /* Light Gray */
+    --footer-link-color: #17A2B8; /* Teal */
+    --footer-link-hover-color: #17A2B8; /* Teal */
+}
+
+
+
+/* Global Styles */
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header, section, footer {
+    padding: 2rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-weight: 700;
+margin-bottom: 1rem;
+}
+
+p {
+margin-bottom: 1rem;
+}
+
+/* Hero Section */
+.hero-section {
+background: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+color: var(--hero-text-color);
+text-align: center;
+padding: 6rem 0;
+position: relative;
+overflow: hidden;
+}
+
+.hero-image {
+width: 100%;
+max-height: 60vh;
+object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 1;
+opacity: 0.3;
+}
+
+.hero-content {
+position: relative;
+z-index: 2;
+max-width: 800px;
+margin: 0 auto;
+text-align: center;
+}
+
+.hero-content h1 {
+font-size: 3rem;
+margin-bottom: 1rem;
+}
+
+.hero-content p {
+font-size: 1.25rem;
+margin-bottom: 2rem;
+}
+
+.hero-buttons {
+display: flex;
+justify-content: center;
+gap: 1rem;
+}
+
+.hero-buttons .primary-btn,
+.hero-buttons .secondary-btn {
+padding: 0.75rem 2rem;
+border: none;
+border-radius: 5px;
+font-size: 1rem;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.hero-buttons .primary-btn {
+background-color: #343a40;
+color: white;
+}
+
+.hero-buttons .primary-btn:hover {
+background-color: #495057;
+}
+
+.hero-buttons .secondary-btn {
+background-color: #ffffff;
+color: #343a40;
+}
+
+.hero-buttons .secondary-btn:hover {
+background-color: #e9ecef;
+}
+

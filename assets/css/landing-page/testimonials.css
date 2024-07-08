@@ -1,0 +1,53 @@
+#testimonials {
+    background: var(--testimonial-background); /* Keep the loved background */
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+#testimonials .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+#testimonials h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: var(--primary-color); /* Use the primary color for heading to bring in color from schema */
+}
+
+.testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.testimonial-card {
+    background: var(--highlight-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow-color-deep);
+    margin: 1rem;
+    padding: 2rem;
+    text-align: left;
+    max-width: 500px;
+    flex: 1 1 calc(33% - 2rem);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px var(--shadow-color-deeper);
+}
+
+.testimonial-card p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.testimonial-card b {
+    display: block;
+    margin-top: 1rem;
+    color: var(--secondary-color); /* Using secondary color for bold text to stand out */
+    font-size: 1.1rem;
+}
