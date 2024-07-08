@@ -1,9 +1,10 @@
-.features-section .container {
+.features-section .container,
+.benefits-section .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
-/* Features Section */
+
 .features-cards, .benefits-cards {
     display: flex;
     flex-wrap: wrap;
@@ -13,8 +14,8 @@
 
 .feature-card, .benefit-card {
     box-sizing: border-box; /* Include padding and borders within the element's total width */
-    flex: 1 1 calc(25% - 20px); /* Adjust flex basis considering gap */
-    max-width: calc(25% - 20px); /* Ensure four cards exactly fit within the row */
+    flex: 1 1 calc(50% - 30px); /* Adjust flex basis for two cards per row */
+    max-width: calc(50% - 30px); /* Ensure two cards exactly fit within the row */
     padding: 20px; /* Adjust padding as necessary */
     margin: 10px; /* Check and adjust margins as they contribute to overall width */
     border-radius: 10px;
@@ -47,8 +48,8 @@
 /* Responsive Adjustments for Smaller Desktop and Tablet Sizes */
 @media (max-width: 992px) {
     .feature-card, .benefit-card {
-        flex: 1 1 46%; /* Two cards per row */
-        max-width: 46%;
+        flex: 1 1 calc(50% - 30px); /* Two cards per row */
+        max-width: calc(50% - 30px);
     }
 }
 
@@ -58,7 +59,6 @@
         max-width: 100%;
     }
 }
-
 
 .benefits-section {
     background: var(--benefit-background);
@@ -99,8 +99,8 @@
     margin: 10px;
     padding: 25px;
     text-align: center;
-    flex: 1 1 calc(25% - 40px); /* Adjusted for actual width minus margin and gap */
-    max-width: calc(25% - 40px); /* Consistent with flex setting */
+    flex: 1 1 calc(50% - 40px); /* Adjusted for actual width minus margin and gap */
+    max-width: calc(50% - 40px); /* Consistent with flex setting */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-sizing: border-box; /* Include padding and borders in width calculation */
 }
@@ -135,8 +135,8 @@
 
 @media (max-width: 992px) {
     .benefit-card {
-        flex: 1 1 46%;
-        max-width: 46%;
+        flex: 1 1 calc(50% - 30px);
+        max-width: calc(50% - 30px);
     }
 }
 

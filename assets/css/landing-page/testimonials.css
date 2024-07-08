@@ -1,7 +1,9 @@
+/* Testimonials Section */
 #testimonials {
     background: var(--testimonial-background); /* Keep the loved background */
     text-align: center;
     padding: 4rem 1rem;
+    overflow: hidden; /* Hide overflow for smooth scrolling */
 }
 
 #testimonials .container {
@@ -16,28 +18,43 @@
     color: var(--primary-color); /* Use the primary color for heading to bring in color from schema */
 }
 
-.testimonial-cards {
+.testimonial-carousel {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
+    transition: transform 0.5s ease;
+    overflow: hidden; /* Hide overflow to enable smooth scrolling */
 }
 
 .testimonial-card {
+    min-width: 300px; /* Width of each card */
+    max-width: 300px;
     background: var(--highlight-color);
     border-radius: 10px;
     box-shadow: 0 4px 8px var(--shadow-color-deep);
     margin: 1rem;
     padding: 2rem;
     text-align: left;
-    max-width: 500px;
-    flex: 1 1 calc(33% - 2rem);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .testimonial-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 12px var(--shadow-color-deeper);
+}
+
+.testimonial-card .icon-container {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-card .icon-container img {
+    width: 100%;
+    height: auto;
 }
 
 .testimonial-card p {
@@ -50,4 +67,24 @@
     margin-top: 1rem;
     color: var(--secondary-color); /* Using secondary color for bold text to stand out */
     font-size: 1.1rem;
+}
+
+.testimonial-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.control-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.control-btn:hover {
+    background-color: var(--secondary-color);
 }
