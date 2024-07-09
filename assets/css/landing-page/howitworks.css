@@ -22,16 +22,16 @@
 
 .how-it-works-cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Ensure no wrapping */
     justify-content: center;
-    gap: 20px; /* Consistent with features section */
+    gap: 30px; /* Increased gap for better spacing */
 }
 
 .how-it-works-card {
-    flex: 1 1 22%; /* Same adjustment as feature cards */
-    max-width: 22%; /* Consistent width for uniformity */
+    flex: 1 1 calc(33.33% - 30px); /* Adjusted for three cards per row */
+    max-width: calc(33.33% - 30px); /* Ensure three cards fit within the row */
     padding: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Updated shadow */
+    box-shadow: 0 4px 8px var(--shadow-color-deep);
     border-radius: 10px;
     background-color: #ffffff; /* White background for cards */
     color: #333333; /* Dark text color */
@@ -41,7 +41,7 @@
 
 .how-it-works-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Updated shadow */
+    box-shadow: 0 6px 12px var(--shadow-color-deeper);
 }
 
 .how-it-works-card .icon-container {
@@ -53,17 +53,17 @@
     justify-content: center;
     border-radius: 50%; /* Circular container */
     background-color: #6dd5ed; /* Background color for icon container */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 4px var(--shadow-color-deep);
 }
 
-.how-it-works-card img {
-    max-width: 50%; /* Adjusted for better fit */
-    height: auto;
+.how-it-works-card .icon {
+    font-size: 2.5rem; /* Icon size */
+    color: #ffffff; /* Icon color */
 }
 
 .how-it-works-card h3 {
     margin-bottom: 1rem;
-    font-size: 1.25rem; /* Slightly larger text */
+    font-size: 1.5rem; /* Slightly larger text */
     font-weight: 600;
     color: #2193b0; /* Darker color for headings */
 }
@@ -75,9 +75,12 @@
 }
 
 @media (max-width: 992px) {
+    .how-it-works-cards {
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    }
     .how-it-works-card {
-        flex: 1 1 48%; /* Adjust for smaller screens */
-        max-width: 48%;
+        flex: 1 1 calc(50% - 30px); /* Adjust for smaller screens */
+        max-width: calc(50% - 30px);
     }
 }
 
