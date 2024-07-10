@@ -1,0 +1,85 @@
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(120deg, #2193b0 0%, #6dd5ed 100%);
+    color: var(--hero-text-color);
+    text-align: center;
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%; /* Ensures the image spans the full width of its container */
+    height: 100%; /* Ensures the image covers the full height available */
+    object-fit: cover; /* Ensures the image covers the area without distorting its aspect ratio */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.3; /* Maintains the same opacity for stylistic consistency */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px var(--hero-shadow-intensity);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.hero-buttons .primary-btn,
+.hero-buttons .secondary-btn {
+    padding: 0.75rem 2.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-buttons .primary-btn {
+    background-color: var(--hero-button-background);
+    color: var(--hero-button-color);
+    box-shadow: 0 4px 8px var(--shadow-color-deeper);
+}
+
+.hero-buttons .primary-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px var(--shadow-color-deeper);
+}
+
+.hero-buttons .secondary-btn {
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+    box-shadow: 0 4px 8px var(--shadow-color-deeper);
+}
+
+.hero-buttons .secondary-btn:hover {
+    background-color: #e9ecef;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px var(--shadow-color-deeper);
+}

@@ -1,0 +1,144 @@
+:root {
+    --primary-color: #0A74DA; /* Blue */
+    --secondary-color: #094B9C; /* Darker Blue */
+    --accent-color: #17A2B8; /* Teal */
+    --text-color: #343A40; /* Dark Gray */
+    --background-color: #F8F9FA; /* Light Gray */
+    --highlight-color: #FFFFFF; /* White */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Shadow */
+    --shadow-color-deep: rgba(0, 0, 0, 0.15); /* Deeper Shadow */
+    --shadow-color-deeper: rgba(0, 0, 0, 0.2); /* Deepest Shadow */
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header, section, footer {
+    padding: 2rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+header.header {
+    background: linear-gradient(120deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: var(--highlight-color);
+    text-align: center;
+    padding: 4rem 0;
+}
+
+header.header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+header.header p {
+    font-size: 1.5rem;
+}
+
+#signup {
+    background: var(--background-color);
+    text-align: center;
+    padding: 4rem 2rem;
+    border-top: 5px solid var(--secondary-color);
+}
+
+#signup h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+#signup p {
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.signup-benefits {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.signup-benefits ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    margin-bottom: 1rem;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#signup input[type="email"] {
+    padding: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 500px;
+    transition: all 0.3s ease;
+}
+
+#signup input[type="email"]:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 4px 8px var(--shadow-color-deep);
+    outline: none;
+}
+
+.signup-button {
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    background: var(--primary-color);
+    color: var(--highlight-color);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    background: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.privacy-note {
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+}
+
+.privacy-note a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+footer {
+    background: var(--secondary-color);
+    color: var(--highlight-color);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer p {
+    margin: 0;
+}

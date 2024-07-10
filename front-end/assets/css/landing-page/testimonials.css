@@ -1,0 +1,99 @@
+/* Testimonials Section */
+#testimonials {
+    background: var(--testimonial-background);
+    text-align: center;
+    padding: 4rem 2rem;
+    overflow: hidden;
+}
+
+#testimonials .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+#testimonials h2 {
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+    color: var(--primary-color);
+}
+
+.testimonial-carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+}
+
+.testimonial-card {
+    min-width: 300px;
+    max-width: 300px;
+    background: rgba(171, 125, 171, 0.9); /* Slightly darker shade of purple */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px var(--shadow-color-deep); /* Enhanced shadow for better standout */
+    margin: 1rem;
+    padding: 2rem;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--primary-color);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px var(--shadow-color-deeper);
+}
+
+.testimonial-card .icon-container {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-card .icon-container img {
+    width: 100%;
+    height: auto;
+}
+
+.testimonial-card p {
+    color: #E0E0E0; /* Light Gray for better contrast */
+    line-height: 1.5;
+}
+
+.testimonial-card b {
+    display: block;
+    margin-top: 1rem;
+    color: #FFD700;
+    font-size: 1.2rem; /* Slightly larger for better readability */
+    font-weight: bold; /* Make the text bold */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add shadow for better contrast */
+}
+
+.testimonial-card strong {
+    color: var(--primary-color); /* Blue text */
+    font-weight: bold;
+}
+
+.testimonial-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.control-btn {
+    background-color: #FFD700;
+    color: #343a40;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.control-btn:hover {
+    background-color: #ffec80;
+}

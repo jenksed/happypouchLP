@@ -1,0 +1,205 @@
+/* Media Queries for Responsive Adjustments */
+
+/* Features and Benefits Sections */
+@media (max-width: 992px) {
+    .feature-card, .benefit-card, .how-it-works-card {
+        flex: 1 1 46%; /* Two cards per row on smaller desktops */
+        max-width: 46%;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-card, .benefit-card, .how-it-works-card {
+        flex: 1 1 100%; /* Full width on mobile devices */
+        max-width: 100%;
+    }
+}
+
+/* Navbar Adjustments */
+/* Navbar Adjustments for Mobile Devices */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 0; /* Optimize vertical padding */
+        background: var(--nav-gradient-start); /* Ensure consistent background on collapse */
+    }
+
+    .navbar .container {
+        padding: 0 10px; /* Reduce lateral padding to maximize space */
+    }
+
+    .navbar .logo img {
+        height: 40px; /* Ensure logo size is optimal */
+    }
+
+    .navbar .nav-links {
+        display: none; /* Start with hidden menu */
+        flex-direction: column;
+        width: 100%;
+        background: linear-gradient(to right, var(--nav-gradient-start), var(--nav-gradient-end)); /* Stylish gradient background */
+        position: fixed; /* Use fixed to overlay content */
+        top: 60px; /* Start below navbar */
+        left: 0;
+        right: 0; /* Stretch across all widths */
+        text-align: center;
+        padding: 1rem 0;
+        box-shadow: 0 4px 6px var(--shadow-color); /* Soft shadow for depth */
+        z-index: 1001; /* Above all other content */
+    }
+
+    .navbar .nav-links.show {
+        display: flex; /* Display when menu toggle is clicked */
+    }
+
+    .navbar .nav-links li {
+        margin: 1rem 0; /* Spacious vertical margin for easier touch */
+    }
+
+    .navbar .nav-links li a {
+        padding: 0.75rem; /* Sufficient padding for touch targets */
+        font-size: 1.2rem; /* Legible font size */
+    }
+
+    .navbar .nav-links .cta-button {
+        margin-top: 1rem; /* Separate CTA from other links */
+        padding: 0.75rem 1.5rem; /* Comfortable to press */
+        border-radius: 25px; /* Rounded for aesthetic appeal */
+    }
+
+    .navbar .menu-toggle {
+        display: flex;
+        position: absolute;
+        top: 10px; /* Adjust for visual centering */
+        right: 10px; /* Standard right spacing */
+    }
+
+    .navbar .menu-toggle span {
+        background: var(--highlight-color); /* Ensure toggle bars are visible */
+    }
+
+    .navbar .menu-toggle.active span:nth-child(1),
+    .navbar .menu-toggle.active span:nth-child(3) {
+        transform: rotate(45deg) translate(5px, 5px);
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .navbar .menu-toggle.active span:nth-child(2) {
+        opacity: 0; /* Middle bar disappears */
+    }
+
+    .navbar .search-icon {
+        display: block; /* Make sure search icon is visible */
+        position: absolute;
+        right: 50px; /* Adjust based on toggle position */
+        top: 12px; /* Align with toggle */
+        color: var(--highlight-color); /* Bright color for visibility */
+        font-size: 1.5rem; /* Large enough for easy interaction */
+    }
+}
+
+/* Tablet Adjustments for Navbar */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 0.75rem 0; /* Slightly reduced padding */
+    }
+
+    .navbar .container {
+        padding: 0 20px; /* Provide enough padding but less than on desktops */
+    }
+
+    .navbar .logo img {
+        height: 45px; /* Adjust the logo size to be slightly smaller than on desktop */
+    }
+
+    .navbar .nav-links {
+        flex-direction: row; /* Keep links horizontal if there's enough space */
+        justify-content: center; /* Center links for better aesthetics */
+        padding: 0; /* Remove vertical padding */
+    }
+
+    .navbar .nav-links li {
+        margin: 0 10px; /* Reduce margin between links */
+    }
+
+    .navbar .nav-links li a {
+        font-size: 1rem; /* Slightly smaller font size than on desktop */
+        padding: 0.5rem 1rem; /* Adjust padding for better fit */
+    }
+
+    .navbar .nav-links .cta-button {
+        padding: 0.5rem 1.5rem; /* Smaller buttons */
+        font-size: 1rem; /* Adjust font size for consistency */
+    }
+
+    .navbar .menu-toggle {
+        display: none; /* Hide the toggle menu if all links fit horizontally */
+    }
+}
+
+/* Footer Section Adjustments */
+@media (max-width: 768px) {
+    footer .container {
+        grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    }
+
+    footer .footer-section {
+        max-width: 100%; /* Full width for better utilization of space */
+    }
+}
+
+/* Additional Sections as Needed */
+/* Adjustments for Tablets */
+@media (max-width: 992px) {
+    .hero-section {
+        padding: 4rem 1rem; /* Reduce padding for less vertical space */
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem; /* Smaller font size for better fit */
+    }
+
+    .hero-content p {
+        font-size: 1.2rem; /* Adjust paragraph font size for readability */
+    }
+
+    .hero-buttons .primary-btn,
+    .hero-buttons .secondary-btn {
+        padding: 0.5rem 2rem; /* Smaller buttons */
+    }
+}
+
+/* Adjustments for Mobile Devices */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 3rem 0.5rem; /* Even smaller padding for tight spaces */
+    }
+
+    .hero-content {
+        padding: 0 20px; /* Add padding to prevent text from touching the edges */
+    }
+
+    .hero-content h1 {
+        font-size: 2rem; /* Further reduce font size */
+    }
+
+    .hero-content p {
+        font-size: 1rem; /* Smaller paragraph text */
+        margin-bottom: 1.5rem; /* Adjust spacing */
+    }
+
+    .hero-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 0.5rem; /* Reduce gap */
+    }
+
+    .hero-buttons .primary-btn,
+    .hero-buttons .secondary-btn {
+        padding: 0.5rem 1.5rem; /* Adjust button padding for smaller screens */
+        font-size: 1rem; /* Smaller text on buttons */
+        width: 100%; /* Full width buttons */
+    }
+
+    .hero-image {
+        max-height: 50vh; /* Limits the height on smaller devices to prevent excessive vertical space usage */
+        object-position: center; /* Adjusts the focus point of the image to center for better visual balance */
+    }
+}

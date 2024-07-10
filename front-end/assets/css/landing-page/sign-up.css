@@ -1,0 +1,84 @@
+/* Signup Section */
+#signup {
+    background: var(--feature-background);
+    text-align: center;
+    padding: 4rem 2rem;
+    border-top: 5px solid var(--secondary-color);
+}
+
+#signup .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#signup h2 {
+    margin-bottom: 1rem;
+    font-size: 2.8rem;
+    color: var(--primary-color);
+}
+
+#signup p {
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#signup input[type="email"] {
+    padding: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 500px;
+    transition: all 0.3s ease;
+}
+
+#signup input[type="email"]:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 4px 8px var(--shadow-color-deep);
+    outline: none;
+}
+
+.signup-button {
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    background: var(--primary-color);
+    color: var(--highlight-color);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    background: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.privacy-note {
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+}
+
+.privacy-note a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.signup-benefits {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto 2rem;
+}
+
+.signup-benefits ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    margin-bottom: 1rem;
+}
