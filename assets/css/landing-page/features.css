@@ -13,6 +13,13 @@
     gap: 30px;
 }
 
+/* Features Section Headline */
+.features-section h2 {
+    font-size: 2.8rem;
+    color: var(--feature-text-color); /* Unique color from variable */
+    text-transform: uppercase; /* Stylistic choice for features */
+}
+
 .feature-card, .benefit-card {
     box-sizing: border-box;
     flex: 1 1 calc(50% - 40px);
@@ -69,10 +76,12 @@
     border-top: 5px solid var(--secondary-color);
 }
 
+/* Benefits Section Headline */
 .benefits-section h2 {
     font-size: 2.8rem;
-    color: var(--highlight-color);
-    margin-bottom: 1rem;
+    color: var(--benefit-text-color); /* Standout color */
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Spacing for a premium look */
 }
 
 .benefits-section .benefits-intro {

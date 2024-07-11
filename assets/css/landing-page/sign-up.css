@@ -12,10 +12,11 @@
     padding: 0 20px;
 }
 
+/* Sign Up Section Headline */
 #signup h2 {
-    margin-bottom: 1rem;
     font-size: 2.8rem;
-    color: var(--primary-color);
+    color: var(--signup-text-color); /* Bright color to attract attention */
+    text-transform: capitalize; /* Less formal, more inviting */
 }
 
 #signup p {

@@ -62,9 +62,20 @@ header, section, footer {
     padding: 0 1.5rem;
 }
 
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body, button, input, select, textarea {
+    font-family: 'Montserrat', sans-serif; /* Default font */
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold weight for all headings */
+    color: var(--primary-color); /* Consistent color for headlines */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    line-height: 1.2; /* Tight line height for compact and bold headlines */
 }
 
 p {

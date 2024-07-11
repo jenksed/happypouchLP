@@ -203,3 +203,80 @@
         object-position: center; /* Adjusts the focus point of the image to center for better visual balance */
     }
 }
+
+
+/* Tablet Adjustments */
+@media (max-width: 992px) {
+    #how-it-works .how-it-works-card {
+        flex: 1 1 46%; /* Two cards per row on smaller desktops and tablets */
+        max-width: 46%;
+    }
+}
+
+/* Adjustments for Tablets */
+@media (max-width: 992px) {
+    .feature-card, .benefit-card, .how-it-works-card {
+        flex: 1 1 48%; /* Adjust to fill space more effectively, slightly increased from 46% for better fit */
+        max-width: 48%; /* Ensure the cards do not touch each other */
+        margin: 1%; /* Add small margins for visual separation */
+    }
+}
+
+/* Adjustments for Mobile Devices */
+@media (max-width: 768px) {
+    .feature-card, .benefit-card, .how-it-works-card {
+        flex: 1 1 100%; /* Full width on mobile devices for better focus on content */
+        max-width: 100%; /* Ensure full width usage */
+        margin-bottom: 20px; /* Consistent bottom margin for spacing between cards */
+    }
+
+    #how-it-works h2 {
+        font-size: 2rem; /* Smaller font size for headings to better fit mobile screens */
+        padding: 0 20px; /* Increased padding to prevent text from hugging the screen edges */
+    }
+
+    #how-it-works .how-it-works-cards {
+        flex-direction: column; /* Stack cards vertically for better mobile navigation */
+    }
+
+    #how-it-works .how-it-works-card .icon-container {
+        width: 50px; /* Optimize icon container size for mobile */
+        height: 50px; /* Maintain aspect ratio */
+    }
+
+    #how-it-works .how-it-works-card .icon {
+        font-size: 24px; /* Slightly smaller icons for mobile */
+    }
+
+    #how-it-works .how-it-works-card h3 {
+        font-size: 1.25rem; /* Reduce heading size for clarity and space */
+    }
+
+    #how-it-works .how-it-works-card p {
+        font-size: 0.95rem; /* Optimize text size for readability on smaller screens */
+    }
+}
+
+
+@media (max-width: 480px) {
+    /* Apply more refined styles for very small devices */
+    .navbar .nav-links li a {
+        padding: 0.5rem; /* Reduce padding for compact navigation */
+        font-size: 1rem; /* Decrease font size for space efficiency */
+    }
+
+    .hero-section {
+        padding: 2rem 1rem; /* Less padding for more critical content focus */
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem; /* Smaller headline for impact and space conservation */
+    }
+}
+
+/* Responsive Headline Adjustments */
+@media (max-width: 768px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-size: calc(1em + 1vw); /* Dynamic scaling based on viewport width for headlines */
+    }
+}
